@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
+import data from './Data'
+
 class Products extends Component {
+    state = {
+        ...this.props.data
+    }
     render() {
+        console.log(this.state)
       return (
         <div className="Home">
-        
+    
             <h1>My Products</h1>
+            <p>{}</p>
                 <ol>
-                    <li>Bags</li>
-                    <li>Shoes</li>
-                    <li>Purse</li>
+                    {data.map((data) =><ol key={data.id}> {data.id} {data.name}</ol>)}
                 </ol>
             <Link to='/OtherP'>
                 <button >  More Products </button> 
