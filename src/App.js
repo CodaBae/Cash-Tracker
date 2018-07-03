@@ -1,34 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Home from './Home'
-import Products from './Products'
-import OtherP from './OtherP'
-import Warning from './Warning'
+import AddExpensePage from './AddExpensePage'
 import {Switch, Route} from 'react-router-dom'
-import data from './Data'
+import Home from './Home'
+import  EditExpense from './EditExpense'
+import Help from './Help'
+
 
 class App extends Component {
-  state={
-    comments: data
-   
-  }
-  render() {
-    // console.log(this.state.comments.name)
-    // console.log(this.state.comments1)
-    // console.log(this.state.comments2)
+
+  render(){
     return (
       <div className="App">
       
-          <img src={logo} className="App-logo" alt="logo" />
-     
+         
           <main>
             <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/Products' component={Products} />
-            <Route path='/OtherP' component={OtherP} />
-            // <Route path='/*' component={Warning} />
-            <Route path='/:id' render= { (props) =>  <Products data = {data} />} />
+            <Route path='/AddExpensePage' component={AddExpensePage} />
+            <Route path='/EditExpense' component={EditExpense} />
+            <Route path='/Help' component={Help} />
+           
             </Switch>
            
           </main>

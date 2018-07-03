@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 
 
-class Home extends Component {
+
+class AddExpensePage extends Component {
 
   render(){
     return (
       <div className="App">
-      Home page
+    Add expense page
 
       </div>
     );
   }
 }
 
-export default Home;
+export default AddExpensePage;
