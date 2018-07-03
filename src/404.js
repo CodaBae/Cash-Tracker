@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
-class AddExpensePage extends Component {
+
+class W4o4 extends Component {
 
   render(){
     return (
       <div className="App">
-    Add expense page
+    4o4! <br />
   
-
     
       </div>
     );
   }
 }
 
-export default AddExpensePage;
+export default W4o4;
