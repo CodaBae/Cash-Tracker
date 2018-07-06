@@ -3,6 +3,8 @@ import Header from './Header'
 import  './App.css'
 import Router from './reactRouter'
 
+import './playground/redux-cash-Tracker'
+
 
 class App extends Component {
 
@@ -12,6 +14,7 @@ class App extends Component {
 
       <Header />
          <Router />
+     
       </div>
     );
   }

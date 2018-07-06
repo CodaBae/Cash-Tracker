@@ -7,7 +7,7 @@ class W4o4 extends Component {
     return (
       <div className="App">
     4o4! <br />
-  
+    <Link to='/'> go home</Link>
     
       </div>
     );
